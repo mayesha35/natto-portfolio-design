@@ -1,0 +1,48 @@
+.team{
+    padding-bottom: 55px;
+    .team-sec-heading{
+        padding-bottom: 70px;
+        h2{
+            font-size: 36px;
+            font-weight: 700;
+            color:white;
+            line-height: 50px;
+            padding: 0px 40px;
+            
+            span{
+                color: $yellow;
+            }
+        }
+    }
+    .team-right{
+        padding-left: 75px;
+        .upper-sec,.lower-sec{
+            margin-bottom: 40px;
+        }
+        h3{
+            font-size: 22px;
+            font-weight: 700;
+            color:white;
+            margin-bottom: 20px;
+            span{
+                color: $yellow;
+            }
+        }
+        p{
+            font-size: 17px;
+            font-weight: 400;
+            color: #ddd;;
+            line-height: 30px;
+            } 
+      button{
+        background-color: transparent;
+        border: 1px solid #6344C6;
+        outline: none;
+        color: #6344C6;
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 8px;
+        padding: 14px 28px;
+      }  
+    }
+}

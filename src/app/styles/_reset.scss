@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none!important;
+}
+ul,li,ol{
+    list-style-type: none;
+}
+ul,ol{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin-bottom: 0;
+    line-height: 0.8;
+}
+
+body{
+    background-color: $body-color!important;
+}

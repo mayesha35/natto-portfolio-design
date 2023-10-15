@@ -1,0 +1,125 @@
+.footer{
+    padding-bottom: 40px;
+    .footer-short-info{
+        div.short-info-text{
+            margin-top: 40px;
+            p{
+                font-size: 16px;
+                line-height:27px;
+                font-weight: 400;
+                color: $footer-short-info-color;
+                padding-right: 70px;
+            }
+        }
+    }
+
+    .footer-list{
+        h4{
+            color: white;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .list-items{
+            margin-top: 40px;
+            ul{
+                li{
+                    margin-bottom: 15px;
+                    a{
+                        color: white;
+                        font-size: 17px;
+                        font-weight: 400;
+                     }
+                     &:last-child{
+                        margin-bottom: 0;
+                     }
+                }
+            }
+        }
+    }
+    .footer-newsletter{
+        h4{
+            color: white;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .newsletter-body{
+            margin-top: 40px;
+            p{
+                font-size: 16px;
+                line-height:27px;
+                font-weight: 400;
+                color: $footer-short-info-color;
+                padding-right:10px ;
+            }
+            .newsletter-form{
+                background-color: white;
+                border-radius: 8px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 250px;
+                input{
+                    background-color: transparent;
+                    border: none;
+                    outline: none; 
+                    padding-left: 20px;
+                    width: 70%;
+                    &::placeholder{
+                        color: rgba(196, 196, 196, 1);
+                        font-weight: 400;
+                        font-size: 16px;
+                    }
+                }
+                button{
+                    background-color: #6344C6;
+                    border: none;
+                    outline: none;
+                    padding: 15px 20px;
+                    border-radius:0 8px 8px 0 ;
+                    margin-right: -5px;
+                   
+                }
+            }
+            .footer-social{
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+              .icon-bg{
+                margin-right: 20px;
+                background-color: white;
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                transition: .5s all ease-in-out;
+                
+                    svg{
+                        
+                        path{
+                            
+                            transition: .5s all ease-in-out;
+                        }
+                    }
+               
+                &:hover{
+                    background-color:$primary-color;
+                    
+                        svg{
+                            
+                            path{
+                                fill: white;
+                                
+                            }
+                        }
+                    
+                }
+                
+              }
+            }
+        }
+    }
+    
+}
