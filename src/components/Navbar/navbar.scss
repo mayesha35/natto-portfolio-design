@@ -1,17 +1,22 @@
-nav{
-    padding: 20px 0px !important;
-   .navbar-nav{
-     a{
-        font-size: 17px;
-        font-weight: 400;
+nav {
+  padding: 20px 0px !important;
+  .navbar-nav {
+    a {
+      font-size: 17px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.716);
+      margin: 0 15px;
+      transition: 0.5s ease-in-out;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:first-child {
+        margin-left: 0;
+      }
+      &:hover {
+        transform: scale(1.06);
         color: white;
-        margin: 0 15px;
-        &:last-child{
-            margin-right: 0;
-        }
-        &:first-child{
-            margin-left: 0;
-        }
-   }
-}
+      }
+    }
+  }
 }
