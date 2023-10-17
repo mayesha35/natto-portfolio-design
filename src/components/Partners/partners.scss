@@ -1,0 +1,17 @@
+.partners {
+  padding: 120px 0;
+  .slick-slide {
+    div {
+      .item {
+        background-color: brown !important;
+        border: 1px solid white;
+        .logo-container {
+          width: 90% !important;
+          height: 100px !important;
+          margin: 0 auto;
+          background-color: aqua !important;
+        }
+      }
+    }
+  }
+}
