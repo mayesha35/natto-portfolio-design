@@ -13,10 +13,23 @@ const dmSans = DM_Sans({ subsets: ["latin"] });
 const openSans = Open_Sans({ subsets: ["latin"] });
 
 const Clients = () => {
-  const [click, setClick] = useState(false);
-  const handleClick = () => {
-    setClick(!click);
+  const [state, setState] = useState({ objects: [...clientData] });
+  const handleClick = (index) => {
+    let arr = [...state.objects];
+    if (arr[index].click === false) {
+      arr[index].click = true;
+    } else {
+      arr[index].click = false;
+    }
+    setState({ objects: arr });
   };
+  function changeStyle(index) {
+    if (state.objects[index].click == true) {
+      return "bg";
+    } else {
+      return "";
+    }
+  }
   return (
     <>
       <div className="clients">
@@ -54,8 +67,10 @@ const Clients = () => {
                   {clientData.map((item, index) => (
                     <div className="col-lg-6" key={index}>
                       <div
-                        className={`clientCard ${click ? "bg" : ""}`}
-                        onClick={handleClick}
+                        className={`clientCard ${changeStyle(index)}`}
+                        onClick={() => {
+                          handleClick(index);
+                        }}
                       >
                         <div className="card-content">
                           <item.icon />
